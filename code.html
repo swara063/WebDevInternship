@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery delivered in 10 mins</title>
+    <link rel="stylesheet" href="code.css">
+</head>
+<body>
+    <h1> 
+        
+        <div class="part1"><p><img class="logo" src="logo.svg">
+       
+            <input class="p3" placeholder="Search for over 5000 products">
+            <button class="p2" type="button" onclick='alert("Live Location ON")'>Login</button>
+            <button type="button" class="b2" onclick="displayCart()">My Cart</button>
+            </p>
+        </div>
+        <script>
+            var cartItems = []; // Array to store items in the cart
+    
+// Function to add item to the cart
+function addToCart(itemName, itemPrice) 
+    {cartItems.push({ name: itemName, price: itemPrice });}
+    
+// Function to display the cart and calculate the total bill
+function displayCart() {
+    var total = 0;
+
+    // Create a table string to hold the HTML content
+    var tableHTML = "<table border='1'>";
+    tableHTML += "<tr><th>Item</th><th>Price</th></tr>";
+
+    // Display the items in the cart and calculate the total
+    for (var i = 0; i < cartItems.length; i++) {
+        tableHTML += "<tr><td>" + cartItems[i].name + "</td><td>₹" + cartItems[i].price.toFixed(2) + "</td></tr>";
+        total += cartItems[i].price;
+    }
+
+    // Add 18% tax
+    total *= 1.18;
+
+    // Add the total row to the table
+    tableHTML += "<tr><th>Total</th><th>₹" + total.toFixed(2) + "</th></tr>";
+    tableHTML += "</table>";
+
+    // Use document.write to display the table on the page
+    document.write("<h2>Your Shopping Cart</h2>");
+    document.write(tableHTML);
+}
+
+    </script>
+<div class="part2">
+    <img style="display: inline-block" src="32.svg">
+    <div style="display: inline-block">
+    <p  class="p4">Delivery in</p>
+    <p class="p4">10 mins</p></div>
+    <img style="display: inline-block"  src="32.svg">
+</div>
+<div class="part3">
+    <img class="img1" src="img1.webp">
+ </div>
+</h1>
+<div class="part3">
+    <img class="img2" src="img2.webp">
+    <img class="img2" src="img3.webp">
+    <img class="img2" src="img4.webp">
+</div>
+<div class="part4"> 
+        
+        <h1>Your Favourite Picks</h1><br>
+        <div class="box" ><br><br>
+        <img src="img11.jpeg">
+        <div><p>Coriander leaves</p>
+            <p>100g<br>
+            <s>₹14</s><br>₹11<button class="b3" onclick="addToCart('Coriander leaves',14)">ADD</button></p>
+        </div>
+        </div>
+        
+    
+    <div class="box" >
+        <img src="img12.webp">
+
+        <p>Curd</p>
+        <p>500ml<br>
+        <br>₹26<button class="b3" onclick="addToCart('Curd',26)">ADD</button></p>
+    
+    </div>
+    <div class="box">
+        <br><br><br><br><br>
+        <img src="img13.webp">
+        <p>Onion</p>
+        <p>1Kg<br>
+        <s>₹91</s><br>₹73<button class="b3" onclick="addToCart('Onion',73)">ADD</button></p>
+        </div>
+    <div class="box">
+        <br><br><br>
+        <img src="img14.webp">
+        <p>Potato</p>
+        <p>1Kg<br>
+        <s>₹48</s><br>₹38<button class="b3" onclick="addToCart('Potato',38)" >ADD</button></p>
+    
+    </div>
+    <div class="box">
+        <img  src="img15.webp">
+        <p>Chilli</p>
+        <p>100g<br>
+        <s>₹14</s><br>₹11<button class="b3" onclick="addToCart('Chilli',11)">ADD</button></p>
+    
+    </div>
+    <div class="box">
+        <img src="img16.webp">
+        <p>Tomato Local</p>
+        <p>1Kg<br>
+        <s>₹70</s><br>₹56<button class="b3" onclick="addToCart('Tomato Local',56)" >ADD</button></p>
+    
+    </div>
+    
+    <div class="box">
+        <br><br><br><br><br>
+        <img src="img17.webp">
+        <p>Banana Robusta</p>
+        <p>Approx 450g<br>
+        <s>₹36</s><br>₹29<button class="b3" onclick="addToCart('Banana Robusta',29)">ADD</button></p>
+    
+    </div>
+    <div class="box"><br>
+        <img src="img18.webp">
+        <p>Munic Scissors Gl</p>
+        <p>1 Piece<br><br>
+        ₹310<button class="b3" onclick="addToCart('Munic Scissors Gl',310)">ADD</button></p>
+</div>
+<div class="box">
+    <br><br><br>
+    <img src="img19.webp">
+    <p>Nandini Standardised</p>
+    <p>500 ml<br><br>
+    ₹25<button class="b3" onclick="addToCart('Nandini Standardised',25)">ADD</button></p>
+
+</div>
+<div class="box">
+    <br><br><br>
+    <img src="img20.webp">
+    <p>Havmore Dark Choco</p>
+    <p>110 ml<br><br>
+    ₹50<button class="b3" onclick="addToCart('Havmore Dark Choco',50)">ADD</button></p>
+
+</div>
+<div class="box">
+    <img src="img21.webp">
+    <p>Mosquito Raquet</p>
+    <p>1 Piece<br>
+    <s>₹400</s><br>₹299<button class="b3" onclick="addToCart('Mosquito Raquet',299)" >ADD</button></p>
+
+</div>
+<div class="box">
+    <img src="img22.webp">
+    <p>Protinex Rich</p>
+    <p>750 g<br>
+    <s>₹1190</s><br>₹1036<button class="b3" onclick="addToCart('Protinex Rich',1036)">ADD</button></p>
+</div>
+</div>
+    <div class="part5">
+        <h1>Explore New Catergories</h1><br>
+        <img class="img5"src="24.webp">
+        <img class="img5"src="25.webp">
+        <img class="img5"src="26.webp">
+        <img class="img5"src="27.webp">
+        <img class="img5"src="28.webp">
+        <img class="img5"src="29.webp">
+        <img class="img5"src="30.webp">
+    </div>
+<div class="part6">
+        <img class="img1" style="height: 800px" src="ban1.webp">
+ </div>
+<div class="part7">
+    <img class="img1"style="height: 460px" src="bann2.webp">
+</div>
+ <div class="part8">
+    <h2 >How it works</h2>
+            <div class="box3">
+                <img style="text-align: center" src="31.svg"><br>
+                <h3>Place an order</h3><br>
+                <p class="p5">Choose from a wide range of daily<br>essentials</p>
+             </div>
+            <div class="box3">
+                <img style="text-align: center" src="32.svg"><br>
+                <h3>Don't blink</h3><br>
+                <p class="p5">Our Delivery partner will be at your<br>door</p>
+            </div>
+            <div class="box3">
+                <img style="text-align: center"src="33.svg"><br>
+                <h3>Enjoy</h3><br>
+                <p class="p5">Boom! You'll never have to wait for groceries<br>again</p>
+            </div>
+        </div>
+</body>
+</html>

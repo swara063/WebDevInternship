@@ -1,0 +1,132 @@
+
+*{margin: 0%;}
+
+.part1
+{background-color: rgb(81, 39, 153);
+height: 150px;
+text-align: center;}
+
+.logo
+{margin-top: 50px;
+margin-right: 40px;}
+
+.div10
+{display: inline-block; margin-bottom: 100px;
+flex-wrap: wrap;}
+
+.b2
+{background-color: rgb(236, 36, 76);
+border-radius: 5px;
+border: none;
+display: inline;
+margin-right: 120px;
+height: 50px;
+width: 100px;
+margin-top: 0px;
+color: white;
+font-size: large;}
+
+.p2
+{color: white;
+font-weight: 300;
+font-size: large;
+display: inline;
+margin-right: 120px;
+margin-top: 0px;
+background-color: rgb(81, 39, 153);
+border: none;
+}
+
+.p3
+{ width: 300px;
+display: inline;
+margin-right: 120px;
+margin-top: 0px;
+height: 30px;
+}
+
+.part2
+{ background-color: rgb(135, 46, 170);
+height: 100px;
+text-align: center;}
+
+.p4
+{color: white;
+margin-top: 0%;}
+
+.part3
+{margin-top: 20px;
+margin-left: 80px;
+margin-right: 20px;
+margin-bottom: 20px;}
+
+.img1{text-align: center;}
+
+.img2
+{display: inline;
+height:250px;}
+
+.part4
+{margin-left: 40px;
+margin-top: 20px;
+border-color: black;}
+
+.box
+{
+margin-top: 10px;
+margin-bottom: 10px;
+border-style: none;
+box-shadow: 1px 1px 16px -3px rgba(0,0,0,0.39);
+-webkit-box-shadow: 1px 1px 16px -3px rgba(0,0,0,0.39);
+-moz-box-shadow: 1px 1px 16px -3px rgba(0,0,0,0.39);
+margin-left: 10px;
+margin-right: 10px;
+display:inline-block;
+border-radius: 3%;}
+
+.box2
+{height: 25px;
+position:absolute; width:100%; height:100%;}
+
+.b3
+{display: inline;
+background-color: white;
+color: rgb(234, 72, 72);
+border-style:solid ;
+border-radius: 5px;
+border-color: rgb(234, 72, 72); }
+
+.part5
+{margin-top: 40px;
+margin-left: 40px;}
+    
+.img5
+{display: inline-block;
+margin-right:25px;
+margin-left: 5px;}
+
+.part6,.part7
+{ text-align: center;
+margin-top: 40px;}
+
+.part8
+{text-align: center;
+margin-top: 40px;}
+    
+.box3
+{
+box-shadow: 1px 1px 16px -3px rgba(0,0,0,0.39);
+-webkit-box-shadow: 1px 1px 16px -3px rgba(0,0,0,0.39);
+-moz-box-shadow: 1px 1px 16px -3px rgba(0,0,0,0.39);
+text-align: center;
+margin-top: 20px;
+margin-right: 40px;
+height:210px;
+width: 300px;
+border-radius: 3%;
+display: inline-block; }
+
+.p5{color: grey;}
+   
+     
+  
