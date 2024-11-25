@@ -27,5 +27,5 @@ This project is a learning exercise where I attempted to clone the **Zepto** app
 This project is purely for educational purposes. It is **not intended for commercial use** and does not infringe on Zepto's proprietary designs or functionality. The project was developed solely to enhance my skills in web development and UI/UX design.  
 
 ---
-##**Acknowledgments**
+**Acknowledgments**
 -Special thanks to Zepto for inspiring this project and providing a great example of modern e-commerce UI/UX design.
